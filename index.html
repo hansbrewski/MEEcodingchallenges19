@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}\
+p{
+font-family: verdana;
+font-size: 30pt;
+}
+#text{
+ margin: auto;
+ width: 70%;
+}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Minecraft Open Ended Coding Challenge</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="MEEpic (1).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (2).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (3).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (4).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (5).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (6).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (7).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (8).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (9).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (10).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (11).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (12).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (13).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (14).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (15).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (16).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (17).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (18).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (19).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (20).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (21).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (22).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (23).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (24).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (25).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (26).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (27).png" style="width:100%">
+	<img class="mySlides" src="MEEpic (28).png" style="width:100%">
+
+</div>
+<div id="text">
+<p>
+Students from Heathmont used block-based code to build (and destroy) structures in Minecraft Education Edition in Term 4, 2019</p></div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
